@@ -38,11 +38,15 @@ public class Event {
     private final Map<String, Object> attributes;
 
     public Event() {
-        this(new HashMap<>());
+        this(null);
     }
 
     public Event(Map<String, Object> attributes) {
-        this.attributes = attributes;
+        this.attributes = new HashMap<>();
+        // Clone the input attributes
+        if (attributes != null) {
+            this.attributes.putAll(attributes);
+        }
         JACKSON_MAPPER.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
     }
 
