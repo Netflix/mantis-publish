@@ -78,6 +78,10 @@ class EventProcessor {
             return null;
         }
 
+        if (config.isDeepCopyEventMapEnabled()) {
+            event = new Event(event.getMap(), true);
+        }
+
         maskSensitiveFields(event);
 
         if (config.isTeeEnabled()) {
