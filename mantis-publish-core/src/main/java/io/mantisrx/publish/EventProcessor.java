@@ -78,6 +78,7 @@ class EventProcessor {
             return null;
         }
 
+        // make a deep copy before proceeding to avoid altering the user provided map.
         if (config.isDeepCopyEventMapEnabled()) {
             event = new Event(event.getMap(), true);
         }
