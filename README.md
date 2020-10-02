@@ -1,5 +1,7 @@
 # mantis-publish
 
+DEPRECATED - moved to https://github.com/netflix/mantis.
+
 [![Build Status](https://img.shields.io/travis/com/Netflix/mantis-publish.svg)](https://travis-ci.com/Netflix/mantis-publish)
 [![Version](https://img.shields.io/bintray/v/netflixoss/maven/mantis-publish.svg)](https://bintray.com/netflixoss/maven/mantis-publish/_latestVersion)
 [![OSS Lifecycle](https://img.shields.io/osslifecycle/Netflix/mantis-publish.svg)](https://github.com/Netflix/mantis-publish)
